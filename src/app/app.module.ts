@@ -1,3 +1,4 @@
+import { GhUsersModule } from './gh-users/gh-users.module';
 import { MaterialModule } from './material/material.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,7 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     MaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    GhUsersModule
   ],
   providers: [],
   bootstrap: [AppComponent]

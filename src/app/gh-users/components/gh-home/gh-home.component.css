@@ -1,0 +1,12 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: hsl(300, 100%, 25%); */
+}
+.container .search {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
