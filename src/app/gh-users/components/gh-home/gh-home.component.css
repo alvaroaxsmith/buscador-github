@@ -3,7 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: hsl(300, 100%, 25%); */
+  background-color: hsl(207, 35%, 12%);
+  color: hsl(0, 0%, 100%);
 }
 .container .search {
   display: flex;

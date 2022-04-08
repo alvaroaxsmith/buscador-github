@@ -33,9 +33,11 @@ import { MatStepperModule } from '@angular/material/stepper'
 import { MatTableModule } from '@angular/material/table'
 import { MatTabsModule } from '@angular/material/tabs'
 import { MatToolbarModule } from '@angular/material/toolbar'
+import { CdkAccordionModule } from '@angular/cdk/accordion'
 import { MatTreeModule } from '@angular/material/tree'
 @NgModule({
  exports: [
+ CdkAccordionModule,
  MatAutocompleteModule,
  MatBadgeModule,
  MatButtonModule,

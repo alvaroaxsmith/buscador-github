@@ -1,3 +1,105 @@
-img {
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.profile-img {
   border-radius: 50%;
+}
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.profile-login {
+  font-weight: 200;
+  color: #999;
+}
+.profile-bio {
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+.follow-flex, .star-flex {
+  display: flex;
+}
+.follow-flex mat-icon {
+  padding: 0.8rem 0.2rem 0.8rem 0;
+}
+.profile-followers {
+  padding-right: 0.2rem;
+}
+.profile-following {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+.small-tag {
+  font-weight: 200;
+  color: #999;
+}
+ng-template h3 {
+  text-align: left;
+}
+.example-accordion {
+  display: block;
+  max-width: 500px;
+}
+
+.example-accordion-item {
+  display: block;
+  border: solid 1px #ccc;
+}
+
+.example-accordion-item + .example-accordion-item {
+  border-top: none;
+}
+
+.example-accordion-item-header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 30rem;
+}
+
+.example-accordion-item-description {
+  font-size: 0.85em;
+  color: #999;
+}
+
+.example-accordion-item-header,
+.example-accordion-item-body {
+  padding: 16px;
+}
+
+.example-accordion-item-header:hover {
+  cursor: pointer;
+  background-color: hsl(207, 35%, 24%);
+}
+
+.example-accordion-item:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.example-accordion-item:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.star-icon {
+  color: #ffc107;
+}
+.star-count {
+  padding: 0.3rem;
+}
+.repo-lang {
+  font-weight: 200;
+  padding-left: 1rem;
+  color: #999;
 }

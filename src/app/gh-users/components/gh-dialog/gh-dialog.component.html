@@ -1,22 +1,48 @@
-<h2 mat-dialog-title>Dados de {{ user?.name }}</h2>
-  <div mat-dialog-content>
-    <mat-progress-spinner
-      color="accent"
-      mode="indeterminate"
-      *ngIf="user == null; else content"
-    >
-    </mat-progress-spinner>
+<h2 mat-dialog-title color ="primary">Github de {{ user?.name }}</h2>
+<div mat-dialog-content class="container">
+  <mat-progress-spinner color="accent" mode="indeterminate" *ngIf="user == null; else content">
+  </mat-progress-spinner>
 
-    <ng-template #content>
-      <img class="avatar" [src]="user?.avatar_url" alt="{{ user?.name }}">
-      <span>{{ user?.name }}</span>
-      <span>{{ user?.login }}</span>
-      <p>{{ user?.bio }}</p>
-      <span>{{ user?.followers }}</span>
-      <span>{{ user?.following }}</span>
-      <span>{{ user?.location }}</span>
-      <span>{{ user?.email }}</span>
-      <span>{{ user?.blog }}</span>
-      
-    </ng-template>
-  </div>
+  <ng-template #content>
+
+
+    <img class="profile-img" [src]="user?.avatar_url" alt="{{ user?.name }}">
+    <div class="profile-info">
+      <span class="profile-name">{{ user?.name }}</span>
+      <span class="profile-login">{{ user?.login }}</span>
+      <span class="profile-bio">{{ user?.bio }}</span>
+      <div class="follow-flex">
+        <mat-icon>people_outline</mat-icon>
+        <p class="profile-followers">{{ user?.followers}}</p><p class="small-tag">followers</p>
+        <p class="profile-following">{{ user?.following }}</p><p class="small-tag">following</p>
+      </div>
+      <p class="profile-location">{{ user?.location }}</p>
+      <p class="profile-blog">{{ user?.blog }}</p>
+    </div>
+    <h3>Repositorios:</h3>
+
+    <cdk-accordion>
+      <cdk-accordion-item *ngFor="let item of ListRepo; let index = index;" #accordionItem="cdkAccordionItem"
+        class="example-accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
+        [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
+        <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+
+          <span>{{item.name}}
+          <div class="star-flex">
+            <mat-icon class="star-icon">star_outline</mat-icon><div class="star-count">{{item.stargazers_count}}</div>
+          </div>
+            <p class="repo-lang">{{item.language}}</p>
+        </span>
+          <span class="example-accordion-item-description">
+            Click to {{ accordionItem.expanded ? 'close' : 'open' }}
+          </span>
+        </div>
+        <div class="example-accordion-item-body" role="region" [style.display]="accordionItem.expanded ? '' : 'none'"
+          [attr.id]="'accordion-body-' + index" [attr.aria-labelledby]="'accordion-header-' + index">
+          {{item.description}}
+          <button mat-button><a matLine [href]="item.html_url" target="_blank">Acesse no Github</a></button>
+        </div>
+      </cdk-accordion-item>
+    </cdk-accordion>
+  </ng-template>
+</div>
