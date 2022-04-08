@@ -2,6 +2,8 @@ export interface GhUser {
   login: string
   avatar_url: string
   html_url: string
+  email: string
+  company: string
   repos_url: string
   name: string
   blog: string
@@ -11,5 +13,5 @@ export interface GhUser {
   followers: number
   following: number
   created_at: Date
-  
+
 }

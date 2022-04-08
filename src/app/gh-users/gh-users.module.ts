@@ -7,8 +7,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { GhDialogComponent } from './components/gh-dialog/gh-dialog.component';
 import { HttpClientModule } from '@angular/common/http';
 
-
-
 @NgModule({
   declarations: [
     GhHomeComponent,

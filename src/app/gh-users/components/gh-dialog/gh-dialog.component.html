@@ -1,4 +1,22 @@
-<h2 mat-dialog-title>Dados de {{ username }}</h2>
+<h2 mat-dialog-title>Dados de {{ user?.name }}</h2>
   <div mat-dialog-content>
-    <p>Procurando ...</p>
+    <mat-progress-spinner
+      color="accent"
+      mode="indeterminate"
+      *ngIf="user == null; else content"
+    >
+    </mat-progress-spinner>
+
+    <ng-template #content>
+      <img class="avatar" [src]="user?.avatar_url" alt="{{ user?.name }}">
+      <span>{{ user?.name }}</span>
+      <span>{{ user?.login }}</span>
+      <p>{{ user?.bio }}</p>
+      <span>{{ user?.followers }}</span>
+      <span>{{ user?.following }}</span>
+      <span>{{ user?.location }}</span>
+      <span>{{ user?.email }}</span>
+      <span>{{ user?.blog }}</span>
+      
+    </ng-template>
   </div>
