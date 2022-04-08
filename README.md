@@ -11,6 +11,6 @@ Está aplicação faz uma busca de usuário do Github utilizando a api oficial d
 
 | Home  | Dialog |
 |---|---|
-| ![home.gif](https://raw.githubusercontent.com/alvaroaxsmith/ng-training/main/.github/images/home.gif)  | ![dialog.gif](https://raw.githubusercontent.com/alvaroaxsmith/ng-training/main/.github/images/dialog.gif)  |
+| ![home.gif](https://github.com/alvaroaxsmith/ng_training/blob/main/.github/images/home.gif)  | ![dialog.gif](https://github.com/alvaroaxsmith/ng_training/blob/main/.github/images/dialog.gif)  |
 
 ## :memo: Licença
