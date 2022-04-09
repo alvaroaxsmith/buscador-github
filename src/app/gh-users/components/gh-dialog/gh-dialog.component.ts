@@ -13,8 +13,7 @@ export class GhDialogComponent implements OnInit {
   username: string = ''
   user: GhUser | null = null
   ListRepo:  GhRepositories[] | any;
-  items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
-  expandedIndex = 0;
+
 
   constructor(
     private ghService: GhApiService
@@ -28,8 +27,8 @@ export class GhDialogComponent implements OnInit {
     )
 
     this.ghService.findRepo(this.username).subscribe(
-      (usuario)=>
-      this.ListRepo = usuario
+      (repo)=>
+      this.ListRepo = repo
     )
   }
 

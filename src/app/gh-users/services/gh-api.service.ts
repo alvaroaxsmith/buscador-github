@@ -19,8 +19,7 @@ export class GhApiService {
   }
 
   findRepo(username: string): Observable<GhRepositories[]>{
-
     return this.http.get<GhRepositories[]>(`${this.baseUrl}/${username}/repos`)
-
+    
   }
 }
