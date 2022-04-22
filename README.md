@@ -35,7 +35,7 @@ Entre no repositório:
 ```bash
 $ cd buscador-github
 ```
-Instale as dependências digitando no termimal:
+Instale as dependências digitando no terminal:
 ```bash
 $ npm install
 ```
