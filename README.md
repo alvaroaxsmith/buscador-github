@@ -21,6 +21,8 @@ Está aplicação faz buscas de usuário do Github utilizando a api oficial do G
 
 ## :clipboard: Pré-requisitos
 
+- Git
+
 - Node.js
 
 - Angular CLI
