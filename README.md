@@ -2,7 +2,7 @@
 
 ## 💻 Projeto
 
-Está aplicação faz buscas de usuário do Github utilizando a api oficial do Github.
+Esta aplicação faz buscas de usuário do Github utilizando a api oficial do Github.
 
 | Home  | Dialog |
 |---|---|
