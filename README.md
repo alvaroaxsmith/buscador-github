@@ -2,9 +2,9 @@
 
 ## 💻 Projeto
 
-Esta aplicação faz buscas de usuário do Github utilizando a api oficial do Github.
+Esta aplicação faz buscas de usuário do Github utilizando sua api oficial.
 
-| Home  | Dialog |
+| Home  |  Tela de Modal |
 |---|---|
 | ![home.gif](https://github.com/alvaroaxsmith/buscador-github/blob/main/.github/images/home.gif)  | ![dialog.gif](https://github.com/alvaroaxsmith/buscador-github/blob/main/.github/images/dialog.gif)  |
 
